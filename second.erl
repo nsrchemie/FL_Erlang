@@ -8,6 +8,6 @@ triper(A,B) ->
 A+B+ hypo(A,B).
 
 triarea(A,B) ->
-(A + B)/2.
+(A*B)/2.
 
 
