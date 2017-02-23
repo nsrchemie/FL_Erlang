@@ -6,7 +6,7 @@ Csq = first:square(A) + first:square(B),
 math:sqrt(Csq).
 
 triper(A,B) ->
-A+B+math:sqrt(first:square(A) + first:square(B)).
+A+B+ hypo(A,B).
 
 triarea(A,B) ->
 (A + B)/2.
