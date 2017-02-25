@@ -10,3 +10,8 @@ element(1, T).
 
 changethird(T, V) ->
 setelement(3,T,V).
+
+% Tuple filtering comprehension
+% Pl = [{"Belladonna", 10}, {"Bacopa", 3}, {"Psuedopanax",40}]
+% e.g [{Plant, Alkaloid_conc_mg} || {Name, Alkaloid_conc_mg} <- Pl, Alkaloid_conc_mg >= 10]
+% -> [{"Psuedopanax",40}]
