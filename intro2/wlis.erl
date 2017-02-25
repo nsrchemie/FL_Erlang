@@ -13,10 +13,9 @@ hd(L).
 rest_list(L) ->
 tl(L).
 
-decon_list(L)  when length(L) == 1 ->
-L.
-% %Deconstruct a list of length 3
-% length(L) when  length(L) > 1,
-% [A|B] = L,
-% decon_list([B]).
-% length(D) == 1.
+last_list(L)  when length(L) == 1 ->
+% Grab last element of list without reverse, hd, or tl
+L;
+last_list(L) when  length(L) > 1 ->
+[A|B] = L,
+decon_list(B).
