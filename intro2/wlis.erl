@@ -1,5 +1,5 @@
 -module(wlis).
--export([add_end_list/2, sub_list/2, first_elist/1, decon_list/1, rest_list/1]).
+-export([add_end_list/2, sub_list/2, first_elist/1, last_list/1, rest_list/1]).
 
 add_end_list(L, P) ->
 L ++ P.
@@ -18,4 +18,4 @@ last_list(L)  when length(L) == 1 ->
 L;
 last_list(L) when  length(L) > 1 ->
 [A|B] = L,
-decon_list(B).
+last_list(B).
