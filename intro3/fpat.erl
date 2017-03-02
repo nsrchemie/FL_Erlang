@@ -1,7 +1,5 @@
 -module(fpat).
--export([xOr/2]).
+-export([maxThree/3]).
 
-xOr(X,X) ->
-false;
-xOr(_,_) ->
-true.
+maxThree(A,B,C) ->
+max(max(A,B),C).
