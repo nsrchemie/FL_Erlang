@@ -17,7 +17,7 @@ last_list(L)  when length(L) == 1 ->
 % Grab last element of list without reverse, hd, or tl
 L;
 last_list(L) when  length(L) > 1 ->
-[A|B] = L,
+[_|B] = L,
 last_list(B).
 
 
