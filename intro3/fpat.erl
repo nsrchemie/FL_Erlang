@@ -1,6 +1,16 @@
 -module(fpat).
 -export([maxThree/3, numEqual/3]).
 
+xOr1(A,B) ->
+A =/= B.
+
+xOr2(A,B) ->
+not(A==B).
+
+xOr3(A,B) ->
+(not(A) and B) or (A and not(B)).
+
+
 maxThree(A,B,C) ->
 max(max(A,B),C).
 
